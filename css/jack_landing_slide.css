@@ -1,0 +1,80 @@
+@font-face {
+        font-family: stretch;
+        src: url('05003_Blaimim_.ttf');
+}
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+}
+div#tmpSlideshow {
+	box-sizing: border-box;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background: #FFFFFF;
+        border: 2px solid rgb(200, 200, 200);
+        overflow: hidden;
+}
+div.tmpSlide {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+}
+div.tmpSlide img {
+        float: left;
+        margin: 0;
+        width: 100%;
+}
+div.tmpSlideCopy {
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        vertical-align: text-bottom;
+        background: rgba(255,255,255,0.8);
+        padding: 0.5em 0.75em 0.75em;
+}
+div#tmpSlideshow h4 {
+        color: #333;
+        opacity:1;
+        font: 16px stretch;
+        margin: 0;
+}
+div.tmpSlideCopy p {
+	float: right;
+        color: #2a2a2a;
+        font: 14px stretch;
+        line-height: 1em;
+        padding-top: 0.2em;
+        margin: 0;
+}
+div#tmpSlideshowControls {
+        position: absolute;
+        top: 340px;
+        left: 220px;
+        width: 180px;
+}
+div.tmpSlideshowControl {
+        border: 1px solid #e1dece;
+        float: left;
+        margin: 0 6px 6px 0;
+        background: url('/Template/Pictures/Buttons/Feature.png') no-repeat;
+        width: 12px;
+        height: 12px;
+        color: #554d31;
+        font: 6px Arial, sans-serif;
+        text-align: center;
+        cursor: pointer;
+}
+div.tmpSlideshowControl span {
+        line-height: 12px;
+        vertical-align: middle;
+}
+div.tmpSlideshowControlOn {
+        background-image: url('/Template/Pictures/Buttons/FeatureOver.png');
+}
+div.tmpSlideshowControlActive {
+        border: 1px solid rgb(161, 155, 137);
+}

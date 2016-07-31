@@ -1,0 +1,182 @@
+/*
+This stylesheet for jackreedfinart.com was made by Eric Hertenstein.
+I'm not using any resets because they're bulky. We'll see how it goes.
+*/
+
+                                                /* Typographical considerations */
+html {
+        font-size: 0.625em;
+        background-color: #aaa;
+}
+body,
+h3,
+h4,
+h5,
+h6,
+p {
+        width: 100%;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-size: 1.4rem;
+        margin: 0;
+}
+img {
+        width: 100%;
+}
+a {
+        text-decoration: none;
+}
+@font-face {
+        font-family: stretch;
+        src: url('05003_Blaimim_.ttf');
+}
+h1 {
+        width: 100%;
+        font-family: stretch, "courier", serif;
+        font-size: 1.6rem;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid #ccc;
+        margin: 0 0 1em;
+}
+h2 {
+        width: 100%;
+        font-family: stretch, "courier", serif;
+        font-size: 1.5rem;
+        padding-top: 0.5em;
+        border-top: 2px solid #ccc;
+        margin-top: 1em;
+}
+.logo-title, .logo-subtitle {
+        font-family: stretch, "courier", serif;
+        color: #fff;
+        font-size: 1.7rem;
+}
+.logo-title {
+        font-size: 3.6rem;
+}
+.indent {
+        padding-left: 2rem;
+}
+
+                                                /* Layout */
+html {
+        background-color: #aaa;
+}
+.page {
+        position: relative;
+        width: 100vw;
+        top: -0.6rem;
+        background: #fff;
+        background-image: linear-gradient(
+                to right, #fff 0%, 
+                #edc 100%);
+}
+.content {
+        padding: 1rem;
+        color: #555555;
+}
+.content p,
+.content h3 {
+        margin-bottom: 1em;
+}
+aside {
+        float: right;
+        margin: 0 0 1.5rem 1rem;
+}
+.slide-container {
+        position: relative;
+        width: 50%;
+        height: 0;
+        padding-bottom: 40%;
+        margin-bottom: 
+}
+.slide-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+                                                /* Chromey Navey Stuff -- Header and Footer */
+header {
+        position: relative;
+}
+.logo {
+        position: absolute;
+        top: 3rem;
+        left: 8rem;
+        text-shadow: 1px 1px 1px #752838;
+}
+.logo:hover {
+        text-shadow: 1px 1px 6px #000;
+}
+.main-menu {
+        bottom: 0.6rem;
+        right: 2.6rem;        
+        position: absolute;
+        background-image: linear-gradient(
+                to bottom, 
+                rgba(62, 35, 44, 0.0), 
+                rgba(62, 35, 44, 1.0));
+        padding-top: 1.25em;
+}
+.footer-menu {
+        bottom: 0.6rem;
+        right: 3.6rem;        
+        position: absolute;
+        background-image: linear-gradient(
+                to top, 
+                rgba(50, 25, 50, 0.0),
+                rgba(50, 25, 50, 0.5) 30%,
+                rgba(50, 25, 50, 1.0));
+}
+nav a {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 0.75em 2.4em;
+}
+.footer-menu a {
+        padding: 0.4em 2.2em;
+}
+nav a:hover {
+        color: #ccc;
+        background-image: linear-gradient(
+                to bottom, 
+                rgba(0,0,0, 0.2), 
+                rgba(0,0,0, 1.0));
+}
+
+                                                /* Desktop layout fixing */
+@media screen and (min-width: 960px) {
+        .page {
+                max-width: 940px;
+                background-image: linear-gradient(
+                        to right, #aaa 0%, 
+                        #fff 0.6rem, 
+                        #edc calc(100% - 0.6rem), 
+                        #aaa 100%);
+                padding: 0 1rem;
+                margin: 0 auto;
+        }
+        .content {
+                margin: 2rem;
+        }
+        aside {
+                margin: -1rem -1rem 0 2rem;
+        }
+        .short-article {
+                display: flex;
+                justify-content: space-between;
+        }
+        .short-article aside {
+                order: 2;
+        }
+        .short-article article {
+                width: 50%;
+        }
+}
+
+
+
+
